@@ -1,0 +1,102 @@
+:root {
+  --primary-color: rgb(17, 38, 196);
+  --secondary-color: rgb(5, 15, 104);
+}
+
+* {
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgb(41, 9, 64);
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 2em;
+}
+
+input {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--primary-color);
+  padding: .5em .8em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px;
+  border-radius: 70px;
+}
+
+input:focus {
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.movie-container {
+  width: 300px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px var(--primary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-container .movie-img {
+  width: 100%;
+  margin: 0;
+}
+
+.movie-container .info {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: .7em;
+  background-color: var(--secondary-color);
+  margin: -4px;
+}
+
+.rating {
+ background-color:var(--secondary-color);
+ padding: .2rem;
+ box-shadow: 1px 1px 3px;
+}
+
+.rating.green {
+  color: green;
+}
+
+.rating.red {
+  color: red;
+}
+
+.rating.orange {
+  color: orange;
+}
+
+.description {
+  padding: .7em;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transform: translateY(101%);
+  transition: 0.6s ease-in-out;
+}
+
+.movie-container:hover .description {
+  transform: translateY(0);
+  text-align: justify;
+}
+
+
+

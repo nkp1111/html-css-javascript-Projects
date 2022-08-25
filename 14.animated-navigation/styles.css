@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#ede5e5 0%, #ede5e5 50%, rgb(19, 131, 183) 50%, rgb(19, 131, 183) 100%);
+  height: 100vh;
+}
+.main {
+  background-color: white;
+  box-shadow: 1px 1px 15px;
+  width: 80px;
+  transition: 0.6s linear;
+  display: flex;
+  padding: 15px;
+  transition: 0.6s linear;
+}
+.main.active {
+  width: 350px;
+}
+.main ul {
+  display: flex;
+  list-style-type: none;
+  width: 0;
+  padding: 0;
+  margin: 0;
+  transition: 0.6s linear;
+}
+.main.active ul {
+  width: 100%;
+}
+.main ul li {
+  margin:0 5px;
+  font-size: 17px;
+  transform: rotateY(0deg);
+  opacity: 0;
+  transition: 0.6s linear;
+}
+.main.active ul li {
+  margin:0 5px;
+  font-size: 17px;
+  transform: rotateY(360deg);
+  opacity: 1;
+}
+.main ul li a {
+  text-decoration: none;
+  color: black;
+}
+button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border:none;
+  cursor: pointer;
+}
+.line {
+  height:2px;
+  width: 20px;
+  background-color:rgb(20, 88, 75);
+  transition: 0.6s linear;
+  position: absolute;
+  left:5px;
+  top:10px;
+}
+.line2 {
+  top: auto;
+  bottom: 10px;
+}
+.main.active button .line1 {
+  transform:rotate(-765deg) translateY(5.5px);
+}
+.main.active button .line2 {
+  transform:rotate(765deg) translateY(-5.5px);
+}

@@ -1,0 +1,77 @@
+:root {
+  --fill-color:rgb(46, 151, 189);
+  --border-color:rgb(5, 5, 228);
+  --transition: 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color:rgb(31, 109, 244);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--border-color);
+}
+
+h1, h3, p {
+  color: white;
+}
+
+.cup {
+  height: 330px;
+  width: 150px;
+  background-color: white;
+  border: 3px solid var(--border-color);
+  border-radius: 0 0 40px 40px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  transition:var(--transition);
+}
+
+.remain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.percentage {
+  background-color: var(--fill-color);
+  width: 100%;
+  height: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cups {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.small-cup {
+  width:50px;
+  height: 90px;
+  border-radius: 0 0 15px 15px;
+  margin: 5px;
+  transition:var(--transition);
+}
+
+.small-cup.full {
+  background-color: var(--fill-color);
+}

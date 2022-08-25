@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  align-items: center;
+  height: 100vh;
+}
+
+.bg {
+  background: url("../images/beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 110vw;
+  height: 110vh;
+  filter: blur(30px);
+  top: -10px;
+  left: -10px;
+}
+
+.text {
+  font-size: 30px;
+  color: rgb(255, 244, 244);
+  font-weight: 800;
+  z-index: 1;
+}

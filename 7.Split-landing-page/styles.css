@@ -1,0 +1,118 @@
+:root {
+  --left-bg-color: rgba(57, 129, 117, 0.395);
+  --right-bg-color: rgba(46, 147, 101, 0.382);
+  --left-btn-color: rgba(184, 51, 51, 0.7);
+  --right-btn-color: rgba(45, 38, 38, 0.382);
+  --hover-width: 75%;
+  --other-width: 25%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: arial;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.split {
+  width: 50%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.split.left {
+  background: url("/images/background-park-wonder-famous-countryside-waterscape.jpg")center center/cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left::before {
+  content: "";
+  background-color: var(--left-bg-color);
+  width: 100%;
+  height: 100%;
+}
+
+.split.right {
+  background: url("/images/landscape-tropical-green-forest.jpg")center center/cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.split.right::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--right-bg-color);
+}
+
+.like {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.like.left {
+  background-color: var(--left-btn-color);
+  border: var(--left-btn-color) solid 2px;
+}
+
+.like.right {
+  background-color: var(--right-btn-color);
+  border: var(--right-btn-color) solid 2px;
+}
+
+.container.hover-left .split.left {
+  width: var(--hover-width);
+}
+
+.container.hover-left .split.right {
+  width: var(--other-width);
+}
+
+.container.hover-right .split.left {
+  width: var(--other-width);
+}
+
+.container.hover-right .split.right {
+  width: var(--hover-width);
+}
+
+.split.left,
+.split.right,
+.split.left::before,
+.split.right::before {
+  transition: all ease-in-out 2s;
+}
+
+@media (max-width:800px) {
+  .like {
+    padding: 1rem;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  :root {
+    --hover-width: 65%;
+    --other-width: 35%;
+  }
+
+}

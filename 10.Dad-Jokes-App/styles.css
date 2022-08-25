@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: url(https://media.istockphoto.com/photos/happy-young-couples-picture-id538033568?k=20&m=538033568&s=612x612&w=0&h=0HrQ_T47Z8xIe-hp4zfyEgSTJk_kfcpusPyuX73DZXM=) center center/cover;
+}
+
+#joke-container {
+  width: 600px;
+  max-width: 70%;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 0 15px;
+}

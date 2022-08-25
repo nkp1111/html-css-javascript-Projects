@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --hour-color: red;
+}
+
+html.dark {
+  --primary-color: white;
+  --secondary-color: #333;
+  background-color: #111;
+  color: var(--primary-color);
+  transition: all 0.6s ease-in;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: var(--secondary-color);
+
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 10vh;
+  border: none;
+}
+
+html.dark button {
+  font-weight: bold;
+}
+
+.clock-container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.clock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.needle {
+  position: absolute;
+  background-color: var(--primary-color);
+  top: 50%;
+  left: 50%;
+  transform-origin: top center;
+  transition: all 0.2s ease-in;
+}
+
+.hour {
+  background-color: var(--primary-color);
+  transform: translate(-50%, -100%);
+  height: 50px;
+  width: 4px;
+}
+
+.minute {
+  background-color: var(--primary-color);
+  transform: translate(-50%, -100%);
+  height: 70px;
+  width: 3px;
+}
+
+.second {
+  background-color: var(--hour-color);
+  transform: translate(-50%, -100%);
+  width: 3px;
+  height: 60px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--hour-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.time,
+.date {
+  text-align: center;
+}
+
+.time {
+  font-size: 60px;
+  white-space: nowrap;
+  margin: 10px;
+}
+
+
+.circle {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 7px;
+  margin-left: 10px;
+  width: 11px;
+
+  height: 11px;
+}
+
+html.dark .circle {
+  font-weight: bold;
+}

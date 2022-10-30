@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: rgb(33, 33, 108);
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#form {
+  width: 90vw;
+  max-width: 700px;
+}
+
+#form input {
+  width: 100%;
+  background: rgb(16, 47, 104);
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgb(27, 19, 77), 0 10px 30px rgb(19, 36, 36);
+}
+
+#form input:focus {
+  outline: none;
+}
+
+#form input::placeholder {
+  color: rgb(154, 150, 150);
+}
+
+#card {
+  display: flex;
+  margin-top: 20px;
+  background: rgb(41, 18, 153);
+  padding: 3rem;
+  box-shadow: 0 5px 10px rgb(27, 19, 77), 0 10px 30px rgb(19, 36, 36);
+  border-radius: 1.5rem;
+  width: 91%;
+  max-width: 700px;
+}
+
+img.avatar {
+  border-radius: 50%;
+  border: 10px solid rgb(41, 32, 108);
+  height: 110px;
+  width: 110px;
+}
+
+.user-info {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  max-width: 400px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong {
+  font-size: .9rem;
+  margin-left: .5rem;
+}
+
+.repo {
+  color: white;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.25rem .5rem;
+  background: rgb(16, 47, 104);
+  font-size: 0.7rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  #card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #form {
+    max-width: 400px;
+  }
+}

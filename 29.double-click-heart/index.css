@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-family: 'Open Sans', serif;
+  padding-top: 3.3rem;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.likeMe {
+  width: 300px;
+  height: 400px;
+  background: url('https://picsum.photos/id/1024/700/600') center center/ cover;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.likeMe .fa-heart {
+  position: absolute;
+  animation: .5s linear grow;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(10);
+  }
+}

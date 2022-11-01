@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', serif;
+  display: flex;
+  background: darksalmon;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div {
+  position: absolute;
+  bottom: 10vh;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 19px;
+}
+
+input {
+  width: 50px;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
+input:focus {
+  outline: none;
+}

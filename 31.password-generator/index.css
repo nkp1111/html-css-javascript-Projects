@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(44, 18, 139);
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  min-width: 350px;
+  max-width: 100%;
+  background: rgb(17, 6, 86);
+  box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.248);
+  padding: 20px;
+  border-radius: 2px;
+  color: rgb(207, 225, 247);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.result-container {
+  background: rgb(7, 3, 28);
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px 0 9px;
+  margin: 1.2rem 0;
+  position: relative;
+  text-align: left;
+}
+
+.result {
+  word-wrap: break-word;
+}
+
+.result-container .btn {
+  width: 50px;
+  padding: 10px;
+  background: rgb(48, 5, 174);
+}
+
+.btn i {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8rem 0;
+}
+
+#submit-btn {
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 0.7rem 0;
+  color: white;
+  background: rgb(48, 5, 174);
+  border: none;
+  border-radius: 2px;
+}
+
+#length {
+  width: 50px;
+  padding: 5px;
+}

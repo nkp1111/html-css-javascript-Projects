@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', serif;
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+  background: rgb(131, 197, 219);
+}
+
+#add {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: rgb(104, 168, 104);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.note {
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+  background: white;
+  margin: 30px 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.note .tools {
+  background: rgb(104, 168, 104);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note .tools button {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background: transparent;
+}
+
+textarea {
+  height: 400px;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  width: 100%;
+  padding: 30px;
+}
+
+.hidden {
+  display: none;
+}

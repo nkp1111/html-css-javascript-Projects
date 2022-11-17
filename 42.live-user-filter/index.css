@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', serif;
+  display: flex;
+  background: #f8f9f3;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  flex-direction: column;
+}
+
+.container {
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  overflow: hidden;
+}
+
+.title {
+  margin: 0;
+}
+
+.subtitle {
+  display: inline-block;
+  margin: 5px 0 20px;
+  opacity: .8;
+}
+
+header {
+  background: #3e57db;
+  color: white;
+  padding: 30px 20px;
+}
+
+.header input {
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  font-size: 14px;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.header input:focus {
+  outline: none;
+}
+
+#result {
+  background: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#result li {
+  display: flex;
+  padding: 20px;
+}
+
+#result img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+#result .user-info {
+  margin-left: 10px;
+}
+
+#result .user-info h4 {
+  margin: 0 0 10px;
+}
+
+#result .user-info p {
+  font-size: 12px;
+}
+
+#result li:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+#result li.hide {
+  display: none;
+}

@@ -1,0 +1,125 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which band name isn't a Stand in \"JoJo's Bizzare Adventure\"?",
+      "correct_answer": "AC\/DC",
+      "incorrect_answers": [
+        "Green Day",
+        "Survivor",
+        "Red Hot Chili Peppers"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Winch of these names are not a character of JoJo's Bizarre Adventure?",
+      "correct_answer": "JoJo Kikasu",
+      "incorrect_answers": [
+        "Jean-Pierre Polnareff",
+        "George Joestar",
+        "Risotto Nero"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the final villain in the manga series \"Bleach\"?",
+      "correct_answer": "Yhwach",
+      "incorrect_answers": [
+        "Juha Bach",
+        "Yuhabah",
+        "Juhabach"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "On what medium was \"Clannad\" first created?",
+      "correct_answer": "Visual novel",
+      "incorrect_answers": [
+        "Anime",
+        "Manga",
+        "Light novel"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Medaka Kurokami from \"Medaka Box\" has what abnormality?",
+      "correct_answer": "The End",
+      "incorrect_answers": [
+        "Perfection",
+        "Sandbox",
+        "Fairness"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Akatsuki's subclass in \"Log Horizon\" is what?",
+      "correct_answer": " Tracker",
+      "incorrect_answers": [
+        "Assassin",
+        "Scribe",
+        "Apprentice"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In \"Black Lagoon\", what colour is Rock's tie?",
+      "correct_answer": "Teal",
+      "incorrect_answers": [
+        "Crimson",
+        "Dark Brown",
+        "Black"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What studio animated Fullmetal Alchemist?",
+      "correct_answer": "Bones",
+      "incorrect_answers": [
+        "Trigger",
+        "Pierrot",
+        "xebec"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "How does the character Dragowizard, Qinus Axia's from the anime \"Buddyfight\" differ between the Japanese and English dubs?",
+      "correct_answer": "Different Gender",
+      "incorrect_answers": [
+        "Different Body Proportions",
+        "Different Backstory",
+        "Different Appearance"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the protagonist of the 2017 anime \"Land of the Lustrous\"?",
+      "correct_answer": "Phosphophyllite",
+      "incorrect_answers": [
+        "Watermelon Tourmaline",
+        "Cinnabar",
+        "Padparadscha"
+      ]
+    }
+  ]
+}
